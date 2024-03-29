@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        .container{
+            border: solid;
+            width: 30rem;
+            margin-left: 35%;
+            height: 70vh;
+            margin-top: 5%;
+            border-radius: 5px;
+            background:  #ca82aa;
+        }
+        body{
+            background-color: rgb(123, 207, 207);
+        }
+        h2,p{
+            text-align: center;
+            line-height: 2px;
+        }
+        .userdetails input{
+            line-height: 2rem;
+            width: 12rem;
+            margin-left: 25px;
+            border-radius: 5px;
+           
+        }
+         .container .User input{
+            line-height: 2rem;
+            width: 26rem;
+            margin-left: 25px;
+            border-radius: 5px;
+        }
+        .Dateofbirth{
+            margin-left: 25px;  
+        }
+        .Dateofbirth .Birth {
+            margin-left: 25px;
+            width: 7.5rem;
+            height: 2rem;
+            border-radius: 5px;
+        }
+        .details{
+            margin-left: 25px;
+        }
+        .Category{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 25px;
+            width: 85%;
+            margin-top: 2px;
+        }
+        .button input{
+            width: 10rem;
+            margin-left: 10rem;
+            height: 2rem;
+            border-radius: 5px;
+            background:  green;
+            color: white;
+            font-size: large;
+        }
+        .button input:hover{
+            background: rgb(120, 44, 179);
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create a new account</h2>
+        <p>It's quick and easy.</p><hr>
+    <form action="">
+        <span class="userdetails">
+            <input type="text" name="First name" placeholder="First name" minlength="4" required >
+            <input type="text" name="Surname" placeholder="Surname" maxlength="5">
+
+        </span><br><br>
+        <span class="User">
+        <input  type="email" name="Email address" placeholder="Email address" ><br><br>
+        <input  type="password" name="New Password"placeholder="New Password" pattern="[a-z]{4,8}">
+        </span><br><br>
+
+        
+        <span class="Dateofbirth">
+                <label for="dateofbirth">Date of birth</label><br>
+        <select class="Birth" name="Date" id="Date">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="15">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+        </select>
+        <select class="Birth" name="Month" id="Month">
+                <option >Jan</option>
+                <option selected>Feb</option>
+                <option >March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+        </select>
+        <select class="Birth" name="Year" id="Year">
+                <option >2024</option>
+                <option >2023</option>
+                <option >2022</option>
+                <option >2021</option>
+                <option >2020</option>
+                <option >2019</option>
+                <option >2018</option>
+                <option >2017</option>
+                <option >2016</option>
+                <option >2015</option>
+                <option >2014</option>
+                <option >2013</option>
+                <option >2012</option>
+                <option >2011</option>
+                <option >2010</option>
+                <option >2009</option>
+                <option >2008</option>
+                <option >2007</option> 
+                <option >2006</option>
+                <option >2005</option>
+                <option >2004</option>
+                <option >2003</option>
+                <option >2002</option>
+                <option >2001</option>
+                <option >2000</option>
+        </select>
+        </span><br><br>
+
+        <label for="Gender" class="details">Gender</label><br>
+        <div class="Category">
+            
+            <label for="">
+                <span><input type="radio" name="Gender" >male</span></label>
+           
+            <label for="">
+                <span> <input type="radio" name="Gender">Female</span></label>
+            
+            <label for="">
+                <span><input type="radio" name="Gender">Custom</span></label>
+        </div><br>
+        <div class="button">
+        
+            <input type="submit" name="Sign Up" value="Sign Up" formaction="Signed.html">
+        </div>
+
+    </form>  
+    </div>
+</body>
+</html>

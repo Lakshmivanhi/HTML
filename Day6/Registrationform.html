@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg,#71b7e6, #b6598c);
+        }
+        .container{
+            width: 100%;
+            max-width: 700px;
+            background: white;
+            padding: 25px ;
+            border-radius: 5px;
+        }
+        .container .title{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+         .container .title::before{
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 30px; 
+            background: linear-gradient(135deg,#71b7e6, #b6598c);   
+        }
+        .container form .userdetails{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+        form .userdetails .input{
+           margin: 5px;
+           width: 45%;
+        }
+        .userdetails .input input{
+            height: 40px;
+            width: 100%;
+            border-bottom-color: #b6598c;
+            border-top-color:#71b7e6;
+            border-radius: 5px;
+        }
+        .userdetails .input .details{
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .gender-details .gender-title{
+            display: flex;
+            font-weight: bolder;
+            font-size: 20px;
+            margin-top: 2%;
+        }
+        form .gender-details .Category {
+            display: flex;
+             width: 80%;
+            justify-content: space-between;
+            margin-top: 2%;
+        
+        }
+        
+        form .button input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5%;
+            color: #fff;
+            letter-spacing: 1px;
+            font-size: large;
+            background: linear-gradient(135deg,#71b7e6, #b6598c);
+        }
+        form .button input:hover{
+            background: linear-gradient(-135deg,#71b7e6, #b6598c); 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+    <form action="#">
+        <div class="userdetails">
+            <div class="input">
+                <span class="details">Full Name</span>
+                <input type="text" name="Enter your name" placeholder="Enter your name" required>
+            </div>
+            <div class="input">
+                <span class="details">Username</span>
+                <input type="text" name="Enter your username" placeholder="Enter your username" required>
+            </div>
+            <div class="input">
+                <span class="details">Email</span>
+                <input type="email" name="Enter your email" placeholder="Enter your email" required>
+            </div>
+            <div class="input">
+                <span class="details">Phone Number</span>
+                <input type="text" name="Enter your number" placeholder="Enter your number" required>
+            </div>
+            <div class="input">
+                <span class="details">Password</span>
+                <input type="password" name="Enter your password" placeholder="Enter your password" required>
+            </div>
+            <div class="input">
+                <span class="details">Confirm Password</span>
+                <input type="password" name="confirm your password" placeholder="Confirm Your Password" required>
+            </div>
+        </div>
+
+        <div class="gender-details">
+                <span class="gender-title">Gender</span>
+            <div class="Category">
+                 <label for=" ">
+                    <span><input type="radio" name="Status" id="dot one">Male</span>
+                 </label>
+                 <label for=" ">
+                    <span><input type="radio" name="Status" id="dot two">Female</span>
+                 </label>
+                 <label for=" ">
+                    <span><input type="radio" name="Status" id="dot three">Prefer not to say</span>
+                 </label>
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
